@@ -17,6 +17,4 @@ Programa em C# que coleta estatísticas de jogadores de League of Legends (vitó
 
 ## Como Usar
 
-1. Clone este repositório em sua máquina local:
-   ```bash
-   git clone https://github.com/seu-usuario/league-stats-scraper.git
+1. Faça o download da pasta LOLFinder.zip e execute o arquivo setup.exe em seu computador para fazer a instalação da aplicação.
