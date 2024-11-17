@@ -1,0 +1,17 @@
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\bin\Debug\net8.0\LOLFinder.exe
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\bin\Debug\net8.0\LOLFinder.deps.json
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\bin\Debug\net8.0\LOLFinder.runtimeconfig.json
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\bin\Debug\net8.0\LOLFinder.dll
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\bin\Debug\net8.0\LOLFinder.pdb
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\bin\Debug\net8.0\HtmlAgilityPack.dll
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\obj\Debug\net8.0\LOLFinder.csproj.AssemblyReference.cache
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\obj\Debug\net8.0\LOLFinder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\obj\Debug\net8.0\LOLFinder.AssemblyInfoInputs.cache
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\obj\Debug\net8.0\LOLFinder.AssemblyInfo.cs
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\obj\Debug\net8.0\LOLFinder.csproj.CoreCompileInputs.cache
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\obj\Debug\net8.0\LOLFinder.csproj.Up2Date
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\obj\Debug\net8.0\LOLFinder.dll
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\obj\Debug\net8.0\refint\LOLFinder.dll
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\obj\Debug\net8.0\LOLFinder.pdb
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\obj\Debug\net8.0\LOLFinder.genruntimeconfig.cache
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\obj\Debug\net8.0\ref\LOLFinder.dll

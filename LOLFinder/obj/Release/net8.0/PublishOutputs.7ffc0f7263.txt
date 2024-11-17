@@ -1,0 +1,6 @@
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\bin\Release\net8.0\app.publish\LOLFinder.exe
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\bin\Release\net8.0\app.publish\LOLFinder.dll
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\bin\Release\net8.0\app.publish\LOLFinder.deps.json
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\bin\Release\net8.0\app.publish\LOLFinder.runtimeconfig.json
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\bin\Release\net8.0\app.publish\LOLFinder.pdb
+C:\Users\miste\OneDrive\Área de Trabalho\Projetos\LOLFinder\LOLFinder\bin\Release\net8.0\app.publish\HtmlAgilityPack.dll

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "F6QvsZkPel4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\miste\\OneDrive\\Área de Trabalho\\Projetos\\LOLFinder\\LOLFinder\\LOLFinder.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\miste\\.nuget\\packages\\htmlagilitypack\\1.11.71\\htmlagilitypack.1.11.71.nupkg.sha512"
+  ],
+  "logs": []
+}
