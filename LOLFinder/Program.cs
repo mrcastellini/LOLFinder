@@ -112,7 +112,7 @@ class Program
                                 }
                                 else
                                 {
-                                    double surrenderRatePercentage = surrenderRateDouble / 100000000000; // Conversão do dado obtido em porcentagem
+                                    double surrenderRatePercentage = surrenderRateDouble / 1000000000000; // Conversão do dado obtido em porcentagem
                                     Console.WriteLine($"A taxa de rendição de {playerName} é de {surrenderRatePercentage:F2}%!");
                                 }
                                 Console.Write($"Digite aqui o nome do campeão com o qual {playerName} está jogando agora: ");
@@ -121,52 +121,64 @@ class Program
                                 {
                                     championPicked = championPicked;
 
-                                    var pickedUrl = $"https://www.op.gg/champions/{championPicked.ToLower()}/counters"; // URL que inclui o nome do campeão
-                                    var pickedResponse = await client.GetStringAsync(pickedUrl);
-
-                                    var pickedDoc = new HtmlDocument();
-                                    pickedDoc.LoadHtml(pickedResponse);
-
-                                    var pickedNode = pickedDoc.DocumentNode.SelectNodes("//div[contains(@class, 'css-72rvq0 ezvw2kd4')]");
-                                    if (pickedNode != null && pickedNode.Any())
+                                    if (championPicked == "Wukong")
                                     {
-                                        Console.Write("Os melhores campeões para se selecionar contra " + championPicked + " são: | ");
-                                        int loop = 0;
-                                        foreach (var picked in pickedNode)
+                                        championPicked = "monkeyking";
+                                    }
+                                        var pickedUrl = $"https://www.op.gg/champions/{championPicked.ToLower()}/counters"; // URL que inclui o nome do campeão
+                                        var pickedResponse = await client.GetStringAsync(pickedUrl);
+
+                                        var pickedDoc = new HtmlDocument();
+                                        pickedDoc.LoadHtml(pickedResponse);
+
+                                        var pickedNode = pickedDoc.DocumentNode.SelectNodes("//div[contains(@class, 'css-72rvq0 ezvw2kd4')]");
+                                        if (pickedNode != null && pickedNode.Any())
                                         {
-                                            loop++;
-                                            string pickedCounterChampion = picked.InnerText.Trim();
-
-                                            // Aqui, você pode adicionar um filtro, caso queira procurar por um nome específico ou filtrar os counters.
-                                            // Por exemplo, se você souber que um campeão específico é o counter que você procura.
-
-                                            Console.Write($"{pickedCounterChampion.Replace("&#x27;", "'").Replace("&amp;", "&")} | ");
-                                            if (loop >= 5)
+                                            if (championPicked == "monkeyking")
                                             {
-                                                break;
+                                                championPicked = "Wukong";
                                             }
-                                        }
-                                        Console.WriteLine();
-                                        Console.WriteLine($"{playerName} ama jogar de {championName}!");
-                                        Console.Write("Os melhores campeões para se selecionar contra " + championName + " são: | ");
-                                        int loopPicked = 0;
-                                        foreach (var counter in countersNode)
-                                        {
-                                            loopPicked++;
-                                            string counterChampion = counter.InnerText.Trim();
-
-                                            // Aqui, você pode adicionar um filtro, caso queira procurar por um nome específico ou filtrar os counters.
-                                            // Por exemplo, se você souber que um campeão específico é o counter que você procura.
-
-                                            Console.Write($"{counterChampion.Replace("&#x27;", "'").Replace("&amp;", "&")} | ");
-                                            if (loopPicked >= 5)
+                                            else
                                             {
-                                                break;
+                                                championPicked = championPicked;
                                             }
-                                        }
+                                            Console.Write("Os melhores campeões para se selecionar contra " + championPicked + " são: | ");
+                                            int loop = 0;
+                                            foreach (var picked in pickedNode)
+                                            {
+                                                loop++;
+                                                string pickedCounterChampion = picked.InnerText.Trim();
 
-                                        string[] dicas = new string[]
-                    {
+                                                // Aqui, você pode adicionar um filtro, caso queira procurar por um nome específico ou filtrar os counters.
+                                                // Por exemplo, se você souber que um campeão específico é o counter que você procura.
+
+                                                Console.Write($"{pickedCounterChampion.Replace("&#x27;", "'").Replace("&amp;", "&")} | ");
+                                                if (loop >= 5)
+                                                {
+                                                    break;
+                                                }
+                                            }
+                                            Console.WriteLine();
+                                            Console.WriteLine($"{playerName} ama jogar de {championName}!");
+                                            Console.Write("Os melhores campeões para se selecionar contra " + championName + " são: | ");
+                                            int loopPicked = 0;
+                                            foreach (var counter in countersNode)
+                                            {
+                                                loopPicked++;
+                                                string counterChampion = counter.InnerText.Trim();
+
+                                                // Aqui, você pode adicionar um filtro, caso queira procurar por um nome específico ou filtrar os counters.
+                                                // Por exemplo, se você souber que um campeão específico é o counter que você procura.
+
+                                                Console.Write($"{counterChampion.Replace("&#x27;", "'").Replace("&amp;", "&")} | ");
+                                                if (loopPicked >= 5)
+                                                {
+                                                    break;
+                                                }
+                                            }
+
+                                            string[] dicas = new string[]
+                        {
             "Dica: Sempre verifique o mapa para evitar emboscadas.",
             "Dica: Use as runas e builds adequadas para o seu campeão.",
             "Dica: A visão é fundamental. Coloque sentinelas para evitar surpresas.",
@@ -175,14 +187,15 @@ class Program
             "Dica: Tenha paciência no início do jogo, não tente fazer tudo sozinho.",
             "Dica: O trabalho em equipe é essencial para uma vitória, coordene com seus aliados!",
             "Dica: Não se esqueça de comprar itens apropriados durante a partida."
-                    };
-                                        Random rand = new Random();
-                                        int indiceDica = rand.Next(dicas.Length);
+                        };
+                                            Random rand = new Random();
+                                            int indiceDica = rand.Next(dicas.Length);
 
-                                        Console.WriteLine();
-                                        Console.WriteLine(dicas[indiceDica]);
-                                        Console.Write("Pressione a tecla ENTER para sair...");
-                                        Console.ReadLine();
+                                            Console.WriteLine();
+                                            Console.WriteLine(dicas[indiceDica]);
+                                            Console.Write("Pressione a tecla ENTER para sair...");
+                                            Console.ReadLine();
+                                        }
                                     }
                                 }
                             }
@@ -190,7 +203,6 @@ class Program
                     }
                 }
             }
-        }
         catch (HttpRequestException ex)
         {
             Console.WriteLine("Jogador não localizado!");
